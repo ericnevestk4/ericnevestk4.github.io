@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Informe seus dados!</h1>
+    <h2 id="nome"></h2>
+    <h3 id="telefone"></h3>
+    <h4 id="email"></h4>
+    <h5 id="cpf"></h5>
+
+    <script>
+        //Captura o valor e Armaznar na Varialvel
+        let nome = prompt("ola, Digite seu nome ")
+        let telefone = prompt("Digite seu telefone ")
+        let email = prompt("Digite seu email ")
+        let cpf = prompt("Digite seu cpf ")
+
+        //Injeta o Valor Captura no HTML
+
+        document.getElementById('nome').innerHTML = nome
+        document.getElementById('telefone').innerHTML = telefone
+        document.getElementById('email').innerHTML = email
+        document.getElementById('cpf').innerHTML = cpf
+
+        </script>
+
+    
+</body>
+</html>

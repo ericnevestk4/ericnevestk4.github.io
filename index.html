@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saite com JS</title>
+</head>
+<head>
+    <style>
+        /* Estilo base do site*/
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header{
+            background-color: #4caf50;
+            padding: 20px;
+            color: aliceblue;
+        }
+        h1{
+            margin: 0;
+        }    
+        .galeria{
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .galeria img{
+            width: 200px;
+            transition: transform 0.3s ease;
+            border-radius: 10px;
+        }
+        .galeria img:hover{
+            transform: scale(1.2);
+        }
+        #infoservico{
+            display: none;
+            margin: 20px;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+        }
+        .icones i{
+        font-size:40px;
+        color:#888;
+        transition: calor 0.3s ease;
+        cursor: pointer;
+
+        }
+        #mensagemContato{
+            display: none;
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
+
+        }
+
+
+
+
+    </style>
+   </head>
+</body>
+      <header>
+        <h1>Bem Vindo  a Galeria  de imagem</h1>
+      </header>
+      <section>
+        <h2>nossa galeria</h2>
+        <div class="galeria">
+         <img src="https://placehold.co/200x150?text=Ola+Mundo" alt="ola mundo">
+         <img src="https://placehold.co/200x150?text=texto" alt="Texto">
+         <img src="https://placehold.co/200x150?text=imagem" alt="imagem">
+        </div>
+       
+        
+      </section>
+
+      <section>
+        <h2>Mais sobre Nossos serviços</h2>
+        <button onclick="document.getElementById('inforservico').stle.display='block'">
+        clique aqui para saber mais 
+    </button>
+    <div id="inforservico">
+        <p>oferecemos serviços profissionais de fotografia</p>
+    </div>
+
+      </section>
+      <section>
+        <h2>Nossas Redes Sociais</h2>
+        <div class="incones">
+            <i>Facebook</i>
+            <i>Twitter</i>
+            <i>instragram</i>
+        </div>
+      </section>
+
+
+
+     <footer>
+        <h2>contato</h2>
+        <p  onclick="document.getElementById('mensagemContato').style.display='block'">
+          clique aqui para entrar em contato
+        </p>
+        <div id="mensagemContato">
+            <p>telefone (11)123-5678</p>
+            <p>email:exemplo</p>
+        </div>
+     </footer>
+
+
+
+</html>
